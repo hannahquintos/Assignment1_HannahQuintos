@@ -1,0 +1,72 @@
+extends common/layout
+
+block layout-content 
+    div.contentWrapper
+        h1 Edit Costume Information
+        form(method="post", action="/admin/costume/edit/submit")
+            input(type="hidden", name="costumeId", value=editCostume._id) 
+            div 
+                    div
+                        label(for="status") Status
+                    div
+                        select(name="status" id="status")
+                            option(value="pending", selected=editCostume.status === "pending") Pending
+                            option(value="approved", selected=editCostume.status === "approved") Approved
+                            option(value="denied", selected=editCostume.status === "denied") Denied
+            fieldset 
+                legend Personal Information
+                div.formFieldset
+                    div 
+                        div
+                            label(for="firstName") First Name 
+                        div
+                            input(type="text", id="firstName", name="firstName" value=editCostume.firstName)
+                    div 
+                        div
+                            label(for="lastName") Last Name 
+                        div
+                            input(type="text", id="lastName", name="lastName" value=editCostume.lastName)
+                    div 
+                        div
+                            label(for="email") Email
+                        div
+                            input(type="text", id="email", name="email" value=editCostume.email)
+                    div 
+                        div
+                            label(for="city") City of Residence
+                        div
+                            input(type="text", id="city", name="city" value=editCostume.city)
+            fieldset
+                legend Costume Information
+                div.formFieldset
+                    div.spanTwo 
+                        div
+                            label(for="imageUrl") Image URL 
+                        div
+                            input(type="text", id="imageUrl", name="imageUrl" value=editCostume.imageUrl)
+                    div 
+                        div
+                        label(for="title") Costume Title
+                        div
+                            input(type="text", id="title", name="title" value=editCostume.title)
+                    div 
+                        div
+                            label(for="price") Price
+                        div
+                            input(type="text", id="price" name="price" value=editCostume.price)
+                    div 
+                        div
+                            label(for="size") Size
+                        div
+                            input(type="text", id="size" name="size" value=editCostume.size)
+                    div 
+                        div
+                            label(for="style") Dance Style
+                        div
+                            input(type="text", id="style" name="style" value=editCostume.style)
+                    div.spanTwo 
+                        div
+                            label(for="description") Description
+                        div
+                            textarea(id="description" name="description") #{editCostume.description}
+            button#formBtn(type="submit") Save

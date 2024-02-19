@@ -1,0 +1,11 @@
+extends common/layout
+
+block layout-content 
+    div#heroSection
+        img#heroImage(src='./images/dancer.jpg' alt='A dancer doing a jump in the street.')
+        //- https://unsplash.com/photos/jumping-ballerina-wearing-blue-dress-during-daytime-8E80yYnp87k
+        div#heroTextContainer
+            h1#heroHeading Welcome to Costume Connections
+            p#heroText The ultimate destination for dancers to swap, sell, and discover stunning dance costumes! Whether you're seeking the perfect costume for your next performance or looking to give new life to gently loved pieces, our platform offers a seamless exchange experience.
+            button#heroBtn
+                a(href='/costumes') Find a Costume

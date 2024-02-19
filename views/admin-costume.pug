@@ -1,0 +1,28 @@
+extends common/layout
+
+block layout-content 
+    div.contentWrapper
+        div.costume
+            img.costumeImg(src=costume.imageUrl alt="Costume product image.")
+            div.costumeInfo
+                div.status
+                    p Status: #{costume.status}
+                h1 #{costume.title}
+                p.price #{costume.price}
+                p.size Size #{costume.size}
+                p #{costume.description}
+                p Suggested dance style: #{costume.style}
+                div.line
+                div#ownerDetails
+                    h2 Costume Owner Details 
+                    p #{costume.firstName} #{costume.lastName} 
+                    p #{costume.email}
+                    p City of Residence: #{costume.city}  
+
+                div#actionForms
+                    form(action="/admin/costume/edit")
+                        input(type="hidden", name="costumeId", value=costume._id)
+                        button.actionBtn#editBtn(type="submit") Edit
+                    form(action="/admin/costume/delete")
+                        input(type="hidden", name="costumeId", value=costume._id)
+                        button.actionBtn(type="submit") Delete

@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Sarabun:wght@700&display=swap');
+
+/* GENERAL */
+body{
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    color: #3E3C3D;
+}
+
+h1, h2{
+    font-family: "Sarabun", sans-serif;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+p{
+    font-size: 1.2em;
+}
+
+.contentWrapper{
+    max-width: 1366px;
+    margin: 0;
+    padding: 0 115px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    background-color: #B62652;
+    color: white;
+    font-size: 1.4em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: #801330;
+}
+
+/* HEADER */
+
+#header{
+    background-color: #3E3C3D;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+#menu a:hover{
+    font-weight: 700;
+}
+
+li{
+    list-style: none;
+}
+
+#cartIcon{
+    height: 25px;
+}
+
+#siteLogo{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+#siteName{
+    margin: 0;
+}
+
+/* FOOTER */
+
+#footer{
+    background-color: #3E3C3D;
+    height: 80px;
+    color: white;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+}
+
+/* HOME PAGE */
+
+#heroImage{
+    flex: 40%;
+}
+
+#heroSection{
+    display: flex;
+    gap: 3em;
+}
+
+#heroTextContainer{
+    flex: 60%;
+    padding-right: 8%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#heroHeading{
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+#heroText{
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+#heroBtn{
+    width: 210px;
+}
+
+/* COSTUMES PAGE */
+.productLink{
+    text-decoration: none;
+    color: inherit;
+}
+
+.productCostumeImg{
+    width: 100%;
+    height: auto;
+}
+
+.productCostume h2{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-weight: 500;
+    font-size: 1.2em;
+    font-family: "Open Sans", sans-serif;
+}
+
+.productCostume h2 .boldText {
+    font-weight: 700;
+    margin-top: 0;
+}
+
+.costumes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3.2em;
+    row-gap: 2em;
+    padding-bottom: 3em;
+}
+
+/* SINGLE COSTUME PAGE */
+
+.costume{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    gap: 5em;
+}
+
+.costumeImg{
+    width: 100%
+}
+
+.costumeInfo h1{
+    margin-top: 0;
+    margin-bottom: 0.25em;
+}
+
+.costumeInfo h2{
+    margin-bottom: 0.25em;
+    font-size: 1.3em;
+}
+
+.costumeInfo p{
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+.actionBtn{
+    font-size: 1em;
+    width: 100px;
+}
+
+#editBtn{
+    background-color: #3D5362;
+}
+
+#editBtn:hover{
+    background-color: #003744;
+}
+
+#actionForms{
+    display: flex;
+    gap: 0.5em;
+}
+
+.status{
+    border: 1.5px solid #B62652;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.status p{
+    margin-bottom: 0;
+}
+
+.costumeInfo .price{
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
+
+.costumeInfo .size{
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+#addToCartBtn{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    width: 200px;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: #3E3C3D;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+#ownerDetails p{
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+/* SELL & ADMIN EDIT PAGES */
+
+#formBtn{
+    font-size: 1em;
+    width: 120px;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+form{
+    font-size: 1.2em;
+}
+
+label{
+    font-weight: 600;
+}
+
+input, textarea{
+    width: 100%;
+}
+
+input, textarea, select{
+    border-radius: 8px;
+    border: 1px solid #3E3C3D;
+    font-size: 0.9em;
+    padding: 0.25em 0.5em;
+    margin-top: 0.5em;
+}
+
+input{
+    height: 30px;
+}
+
+textarea{
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+select{
+    height: 30px;
+    width: 130px;
+}
+
+.formFieldset{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3em;
+    row-gap: 1em;
+    padding: 1em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+fieldset{
+    margin-top: 2em;
+}
+
+.spanTwo{
+    grid-column: span 2;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:980px){
+
+    /* HEADER */
+
+    #header{
+        flex-direction: column;
+        gap: 0.5em;
+        padding: 1em 0;
+        height: auto;
+    }
+
+    #menu{
+        margin: 0;
+        padding-left: 0;
+
+    }
+
+    /* HOME PAGE */
+
+    #heroSection{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    #heroTextContainer{
+        padding: 0 66px;
+        margin-top: 2.5em;
+    }
+
+    #heroImage{
+        width: 60%;
+        flex: 0;
+        margin-bottom: 2.5em;
+        padding: 0 66px;
+    }
+
+    /* COSTUMES PAGE */
+    .costumes{
+        column-gap: 1em;
+    }
+
+    /* SINGLE COSTUME PAGE */
+
+    .costume{
+        gap: 3em;
+    }
+}
+
+/* tablet */
+@media screen and (max-width:768px){
+
+    /* GENERAL */
+
+    body{
+        font-size: 1em;
+    }
+
+    .contentWrapper{
+        max-width: 768px;
+        padding: 0 66px;
+    }
+
+    /* SINGLE COSTUME PAGE */
+
+    #addToCartBtn{
+        width: 180px;
+    }
+
+    /* SELL & ADMIN EDIT PAGES */
+    .formFieldset{
+        grid-template-columns: 1fr;
+        column-gap: 3em;
+        row-gap: 1em;
+    }
+
+    .spanTwo{
+        grid-column: span 1;
+    }
+
+}
+
+/* mobile */
+@media screen and (max-width:480px){
+
+    /* GENERAL */
+
+    body{
+        font-size: 0.75em;
+    }
+
+    .contentWrapper{
+        max-width: 480px;
+        padding: 0 37px;
+    }
+
+    /* HEADER */
+
+    #cartIcon{
+        height: 20px;
+    }
+
+    /* COSTUMES PAGE */
+    .costumes{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0.75em;
+    }
+
+    /* SINGLE COSTUME PAGE */
+
+    #addToCartBtn{
+        width: 120px;
+    }
+
+    .status{
+        width: 140px;
+    }
+
+    /* SELL & ADMIN EDIT PAGES */
+    #formBtn{
+        width: 100px;
+    }
+
+}

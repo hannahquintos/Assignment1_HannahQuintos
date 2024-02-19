@@ -1,0 +1,65 @@
+extends common/layout
+
+block layout-content 
+    div.contentWrapper
+        h1 Interested in selling a dance costume?
+        p Please fill out the costume listing form below.
+        form(method="post", action="/sell/submit")
+            input(type="hidden", name="status", value="pending") 
+            fieldset 
+                legend Personal Information
+                div.formFieldset
+                    div 
+                        div
+                            label(for="firstName") First Name 
+                        div
+                            input(type="text", id="firstName", name="firstName")
+                    div 
+                        div
+                            label(for="lastName") Last Name 
+                        div
+                            input(type="text", id="lastName", name="lastName")
+                    div 
+                        div
+                            label(for="email") Email
+                        div
+                            input(type="text", id="email", name="email")
+                    div 
+                        div
+                            label(for="city") City of Residence
+                        div
+                            input(type="text", id="city", name="city")
+            fieldset 
+                legend Costume Information
+                div.formFieldset
+                    div.spanTwo 
+                        div
+                            label(for="imageUrl") Image URL 
+                        div
+                            input(type="text", id="imageUrl", name="imageUrl")
+                    div 
+                        div
+                        label(for="title") Costume Title
+                        div
+                            input(type="text", id="title", name="title")
+                    div 
+                        div
+                            label(for="price") Price
+                        div
+                            input(type="text", id="price" name="price")
+                    div 
+                        div
+                            label(for="size") Size
+                        div
+                            input(type="text", id="size" name="size")
+                    div 
+                        div
+                            label(for="style") Dance Style
+                        div
+                            input(type="text", id="style" name="style")
+                    div.spanTwo
+                        div
+                            label(for="description") Description
+                        div
+                            textarea(id="description" name="description") 
+            button#formBtn(type="submit") Submit

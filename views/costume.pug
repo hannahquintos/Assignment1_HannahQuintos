@@ -1,0 +1,18 @@
+extends common/layout
+
+block layout-content 
+    div.contentWrapper
+        div.costume
+            img.costumeImg(src=costume.imageUrl alt="Costume product image.")
+            div.costumeInfo
+                h1 #{costume.title}
+                p.price #{costume.price}
+                p.size Size #{costume.size}
+                button#addToCartBtn
+                    a(href='#') Add to Cart
+                div.line
+                h2 Description
+                p #{costume.description}
+                p Suggested dance style: #{costume.style}
+                p Shipped from #{costume.city}.
+                div.line

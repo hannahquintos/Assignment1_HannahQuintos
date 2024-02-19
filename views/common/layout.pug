@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width")
+        title #{title} | Costume Connections
+        link(rel="stylesheet", href="/css/styles.css")
+    body
+        header#header.contentWrapper
+            div
+                a#siteLogo(href="/") 
+                    img(src='/images/logo.svg' alt='Logo image.')
+                    h2#siteName Costume Connections
+            div
+                ul#menu
+                    li 
+                        a(href="/") Home
+                    li 
+                        a(href="/costumes") Costumes
+                    li 
+                        a(href="/sell") Sell
+                    li 
+                        a(href="#") Contact
+                    li 
+                        a(href="#")
+                            img#cartIcon(src='/images/cart.svg' alt='Cart icon.')
+    main#main
+        block layout-content
+    footer#footer.contentWrapper
+        div
+            p &copy; Copyright Costume Connections, 2024.

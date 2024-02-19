@@ -1,0 +1,12 @@
+extends common/layout
+
+block layout-content 
+    div.contentWrapper
+        h1 Dance Costumes
+        div.costumes
+            each costume in costumes 
+                div.productCostume 
+                    a.productLink(href=`/admin/costumes/costume?costumeId=${costume._id}`)
+                        img.productCostumeImg(src=costume.imageUrl alt="Costume product image.")
+                        h2 #{costume.title} - Size #{costume.size}
+                            .boldText #{costume.price}
